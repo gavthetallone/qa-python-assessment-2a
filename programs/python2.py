@@ -143,7 +143,14 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 def five():
-    return []
+    import random
+
+    list = [0]*5
+    for count in range(0, 5):
+        list[count] = random.randint(100, 200)
+        while list[count] % 2 != 0:
+            list[count] = random.randint(100, 200)
+    return list
 
     # <QUESTION 6>
 
