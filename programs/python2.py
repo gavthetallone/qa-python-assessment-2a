@@ -115,7 +115,18 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(string1, string2):
-    return ""
+
+    list1 = list(string1)
+    list2 = list(string2)
+    list3 = []
+    result = ""
+
+    for count in range(0, len(string2)):
+        list3 += list1[count]
+        list3 += list2[count]
+
+    result = result.join(list3)
+    return result
 
     # <QUESTION 5>
 
