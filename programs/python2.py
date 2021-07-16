@@ -52,23 +52,12 @@ def one(string):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(num):
-    # def two(num):
+    for count in range(2, num-1):
+        if num % count == 0 and count != num:
+            return False
+    else:
+        return True
 
-#     for count in range(1, num+1):
-#         if count != num and count != 1 and count % num != 0:
-#             flag = False
-#         else:
-#             flag = True
-    
-#     return print(flag)
-
-#     # print(num % num)
-#     # print(num % 1)
-#     # return print(False)
-
-# two(3)
-# two(8)
-    return False
 
     # <QUESTION 3>
 
@@ -229,6 +218,12 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(string, num):
+    # def eight(string, num):
+#     half = round(len(string)/2) + 1
+
+#     str.replace(string, 
+
+#     return print(string)
     return ""
 
     # <QUESTION 9>
@@ -246,6 +241,13 @@ def eight(string, num):
     # There are no hints for this question.
 
 def nine(string1, string2):
+    # def nine(string1, string2):
+
+#     for count in range(0,len(string1)):
+#         if string1[:count] + string1[count:] == string2:
+#             return print(True)
+#     else:
+#         return print(False)
     return False
 
     # <QUESTION 10>
