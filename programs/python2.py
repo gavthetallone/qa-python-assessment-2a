@@ -169,7 +169,11 @@ def five():
     # There are no hints for this question.
     
 def six(string):
-    return False
+    if string[-2:].lower() == "py":
+        return True
+    else:
+        return False
+
 
     # <QUESTION 7>
 
