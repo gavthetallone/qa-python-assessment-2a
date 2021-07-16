@@ -52,6 +52,22 @@ def one(string):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(num):
+    # def two(num):
+
+#     for count in range(1, num+1):
+#         if count != num and count != 1 and count % num != 0:
+#             flag = False
+#         else:
+#             flag = True
+    
+#     return print(flag)
+
+#     # print(num % num)
+#     # print(num % 1)
+#     # return print(False)
+
+# two(3)
+# two(8)
     return False
 
     # <QUESTION 3>
@@ -69,7 +85,8 @@ def two(num):
     # What happens if you multiply a string by a number?
 
 def three(a):
-    return 1
+
+    return eval(f'{a} + {a}{a} + {a}{a}{a} + {a}{a}{a}{a}')
 
     # <QUESTION 4>
 
