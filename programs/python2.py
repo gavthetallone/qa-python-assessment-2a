@@ -197,7 +197,21 @@ def six(string):
     # Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
-    return False
+    list = [a,b,c]
+    list_sorted = sorted(list)
+    x = 0
+    temp = 1
+    for count in range(0, list_sorted[2]):
+        if count == temp+1:
+            continue
+        elif count not in list_sorted:
+            x += 1
+        temp = count
+
+    if 1 % x != 0:
+        return False
+    else: 
+        return True
 
     # <QUESTION 8>
 
